@@ -6,23 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HolbertonSchool</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="" alt="logo_texto">
-        </figure>
-        <figure>
-            <img src="" alt="logo_texto">
-        </figure>
-        <h1>Conf Medellín</h1>
-        <nav>
-            <a href="#">The conference</a>
-            <a href="#">Speakers</a>
-            <a href="#">The place and the date</a>
-            <a href="#">Buy tickets</a>
-        </nav>
-    </header>
+    <header class="header">
+        <div class="header-container">
+            <figure class="header-logo-container">
+                <img class="logo-img" src="/assets/img/holbertonLogo.png" alt="logo">
+            </figure>
+            <figure class="header-logo-text-container">
+                <img class="logo-text" src="/assets/img/holbertonLgo_lg.png" alt="logo_text">
+            </figure>
+
+            <nav class="header-nav-container">
+                <a href="#">The conference</a>
+                <a href="#">Speakers</a>
+                <a href="#">Place/date</a>
+                <a href="#" class="buy">Buy tickets</a>
+            </nav>
+        </div>
+    </header> <!-- end-header -->
+    
+    <!-- main -->
+    <main class="main">
+        <div class="bg-color">
+            <div class="main-container">
+                <h1 class="principal-title">
+                    Conf Medellín
+                </h1>
+                <p class="main-info-conf">
+                    Alias eaque, excepturi, dolores eos exercitationem animi voluptatibus saepe minima amet quo voluptates labore nam odit soluta quas blanditiis officia, quibusdam delectus enim fugiat quae suscipit qui earum! Nobis, quidem.
+                    Alias eaque, excepturi, dolores eos exercitationem animi voluptatibus saepe minima amet quo voluptates labore nam odit.
+                </p>
+
+                <div class="button-container">
+                    <button type="button" class="speaker-button button-blue button">
+                        I want be Speaker
+                    </button>
+                    <button type="button" class="buy-button button-red button">
+                        Buy tickets
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main> <!-- Fin del main -->
+
+    <section class="speakers">
+        <div class="speakers-container">
+            <h2>Meet the speakers </h2>
+
+            <div class="speaker-cards-container">
+                <article class="speaker-card">
+                    <figure>
+                        <img src="assets/img/speacker_1.jpg" alt="speaker-name1">
+                    </figure>
+                    <section class="speaker-specialty-container">
+                        <p>JavaScript</p>
+                        <p>React</p>
+                    </section>
+        
+                    <h3 class="speaker-name-title">Jose Luis Zuñiga</h3>
+        
+                    <p class="speaker-summary">
+                        Harum aspernatur ipsa illo vero quibusdam. Laboriosam recusandae, laudantium cupiditate ex provident quaerat in, sequi tenetur nemo facere excepturi. Fugit sint odio culpa dolore doloribus cupiditate eveniet nobis recusandae autem.
+                    </p>
+                </article>
+
+                <article class="speaker-card">
+                    <figure>
+                        <img src="#" alt="speaker-name1">
+                    </figure>
+                    <section class="speaker-specialty-container">
+                        <p>JavaScript</p>
+                        <p>React</p>
+                    </section>
+        
+                    <h3 class="speaker-name-title">Jose Luis Zuñiga</h3>
+        
+                    <p class="speaker-summary">
+                        Harum aspernatur ipsa illo vero quibusdam. Laboriosam recusandae, laudantium cupiditate ex provident quaerat in, sequi tenetur nemo facere excepturi. Fugit sint odio culpa dolore doloribus cupiditate eveniet nobis recusandae autem.
+                    </p>
+                </article>
+
+                <article class="speaker-card">
+                    <figure>
+                        <img src="#" alt="speaker-name1">
+                    </figure>
+                    <section class="speaker-specialty-container">
+                        <p>JavaScript</p>
+                        <p>React</p>
+                    </section>
+        
+                    <h3 class="speaker-name-title">Jose Luis Zuñiga</h3>
+        
+                    <p class="speaker-summary">
+                        Harum aspernatur ipsa illo vero quibusdam. Laboriosam recusandae, laudantium cupiditate ex provident quaerat in, sequi tenetur nemo facere excepturi. Fugit sint odio culpa dolore doloribus cupiditate eveniet nobis recusandae autem.
+                    </p>
+                </article>
+
+                <article class="speaker-card">
+                    <figure>
+                        <img src="#" alt="speaker-name1">
+                    </figure>
+                    <section class="speaker-specialty-container">
+                        <p>JavaScript</p>
+                        <p>React</p>
+                    </section>
+        
+                    <h3 class="speaker-name-title">Jose Luis Zuñiga</h3>
+        
+                    <p class="speaker-summary">
+                        Harum aspernatur ipsa illo vero quibusdam. Laboriosam recusandae, laudantium cupiditate ex provident quaerat in, sequi tenetur nemo facere excepturi. Fugit sint odio culpa dolore doloribus cupiditate eveniet nobis recusandae autem.
+                    </p>
+                </article>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>

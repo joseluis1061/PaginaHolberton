@@ -1,0 +1,240 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 63.6%;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --red: rgb(224, 0, 60);
+    --red-shadow: rgba(224, 0, 60,0.9);
+    --blue:rgb(31, 21, 97);
+    --white: #FFFFFF;
+    --white-shadow: rgba(229, 227, 238, 0.9);
+    --black: #000000;
+}
+h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    text-align: center;
+    color: var(--white);
+}
+h2{
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+.container{
+    max-width: 900px;
+    min-width: 350px;
+    margin: 0 auto;
+}
+/* header */
+.header{
+    height: 70px;
+    padding: 25px;
+    background-color: var(--blue);
+}
+.header-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo-container{
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media(min-width: 650px){
+    .header-logo-container{
+        display: none;
+    }
+}
+.header-logo-container .logo-img{
+    width: 100%;
+    height: 100%;
+}
+.header-logo-text-container{
+    width: 192px;
+    height: 50px;
+    overflow: hidden;
+}
+.header-logo-text-container .logo-text{
+    width: 100%;
+    height: 100%;
+}
+.header-nav-container{
+    display: none;
+}
+@media(min-width: 650px){
+    .header-nav-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        margin-left: 15px;
+    }
+    .header-nav-container a{
+        padding: 5px;
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: var(--white);
+    }
+    .header-nav-container a.buy{
+        border: 1px solid var(--red);
+        border-radius: 5px;
+    }
+}
+
+/* main */
+main{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("/assets/img/hero_medellin.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-color{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.main-container{
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: auto 0;
+}
+@media(min-width: 550px){
+    .main-container {
+        position: static;
+        gap: 25px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+.main-container .main-info-conf{
+    display: none;
+}
+
+@media(min-width: 550px){
+    .main-container .main-info-conf{
+        display: block;
+        font-size: 1.2rem;
+        text-align: justify;
+        color: var(--white);
+    }
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 5px;
+}
+/* General button */
+.button{
+    width: 100%;
+    min-width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+@media(min-width: 550px){
+    .button-container{
+        max-width: 400px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button{
+        width: 160px;
+        height: 60px;
+    }
+}
+/* Special button */
+.buy-button{
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: var(--red);
+    color: var(--white);
+}
+.buy-button:hover{
+    background-color: var(--red-shadow);
+    border: 1px solid var(--white);
+}
+.speaker-button{
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--white);
+    color: var(--white);    
+}
+.speaker-button:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/* Star speackers section */
+.speakers{
+    width: 100%;
+    padding: 25px;
+    background-image: linear-gradient(to top, var(--white) 0%, var(--white-shadow) 100%);
+}
+
+.speakers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+.speakers-container h2{
+    color: var(--blue);
+}
+
+.speaker-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.speaker-card{
+
+}
+.speaker-card figure{
+    width: 80%;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+}
+
