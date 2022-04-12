@@ -15,6 +15,7 @@ html{
     --marine:#17a2b8;
     --white: #FFFFFF;
     --white-shadow: rgba(229, 227, 238, 0.9);
+    --dark-gray:#343a40;
     --black: #000000;
 }
 h1{
@@ -23,6 +24,7 @@ h1{
     line-height: 5.7rem;
     text-align: center;
     color: var(--white);
+    background-color: var(--dark-gray);
 }
 h2{
     font-size: 3.8rem;
@@ -34,6 +36,9 @@ h3{
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.6rem;
+}
+img{
+    max-width: 100%;
 }
 .container{
     max-width: 900px;
@@ -106,10 +111,9 @@ h3{
 
 /* main */
 main{
-    position: relative;
     width: 100%;
-    height: 50vh;
-    background-image: url("/assets/img/hero_medellin.jpeg");
+    height: 400px;
+    background-image: url("../assets/img/hero_medellin.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +125,6 @@ main{
     background-color: rgba(0,0,0,0.7);
 }
 .main-container{
-    position: absolute;
     width: 100%;
     top: 15%;
     display: flex;
@@ -147,7 +150,7 @@ main{
 @media(min-width: 550px){
     .main-container .main-info-conf{
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: justify;
         color: var(--white);
     }
@@ -191,14 +194,26 @@ main{
     background-color: var(--red-shadow);
     border: 1px solid var(--white);
 }
-.speaker-button{
+
+.button-red{
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: var(--red);
+    color: var(--white);
+}
+.button-red:hover{
+    background-color: var(--red-shadow);
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+.white-button{
     font-size: 1.8rem;
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--white);
     color: var(--white);    
 }
-.speaker-button:hover{
+.white-button:hover{
     color: var(--black);
     background-color: var(--white);
 }
@@ -214,9 +229,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 25px;
+    
 }
 
 .speakers-container h2{
@@ -224,17 +240,26 @@ main{
 }
 /* Start Cards Speakers Container */
 .speaker-cards-container{
-    width: 100%;
+    /* width: 100%;
     min-width: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;        
+    align-items: center;         */
+    width: 100%;
+
 }
 @media(min-width: 550px){
     .speaker-cards-container{
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+}
+@media(min-width: 1000px){
+    .speaker-cards-container{
+        grid-template-columns: repeat(3, 1fr);        
     }
 }
 /* Individual card */
@@ -249,7 +274,7 @@ main{
 @media(min-width: 550px){
 
     .speaker-card{
-        width: 40%;
+        width: 100%;
         column-gap: 15px
     }
 }
@@ -298,4 +323,108 @@ main{
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.5rem;
+}
+
+/*******Inicio Place***********/
+.place{
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray);
+}
+@media(min-width: 900px){
+    .place{
+        flex-direction: row;
+    }
+    .place__img{
+        flex: calc(40%);
+    }
+    .place__info{
+        flex: calc(60%);
+    }
+}
+.place__img{
+    height: 450px;
+    overflow: hidden;    
+}
+
+.place__info{
+    padding: 2rem;
+}
+.place__info h2{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.place__info p{
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/***********Inscriptions***************/
+.incriptions{
+    
+    padding: 20px 20px;
+    background-color: var(--white-shadow);
+}
+.inscription__form{
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.form_container{
+    border: none;
+}
+.form_container legend{
+    margin: 15px auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+    color: var(--blue);    
+}
+
+.label{
+    font-size: 1.5rem;
+    color: var(--blue);
+    width: 100%;
+    margin-bottom: 20px;
+}
+.label label{
+    width: 100%;
+    display: block;
+}
+.label input{
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+.label textarea{
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+/*********FOOTER************/
+.footer{
+    width: 100%;
+    background-color: var(--blue);
+    padding: 30px auto;
+    display: flex;
+    flex-direction: column;    
+    align-content: center;
+}
+.footer__social{
+    margin: 15px auto;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+.footer p{
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px auto;
 }

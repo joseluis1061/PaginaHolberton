@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="header">
+    <h1>Creator José Luis Zúñiga</h1>
+    <header class="header">        
         <div class="header-container">
             <figure class="header-logo-container">
-                <img class="logo-img" src="/assets/img/holbertonLogo.png" alt="logo">
+                <img class="logo-img" src="./assets/img/holbertonLogo.png" alt="logo">
             </figure>
             <figure class="header-logo-text-container">
-                <img class="logo-text" src="/assets/img/holbertonLgo_lg.png" alt="logo_text">
+                <img class="logo-text" src="./assets/img/holbertonLgo_lg.png" alt="logo_text">
             </figure>
 
             <nav class="header-nav-container">
@@ -43,7 +44,7 @@
                 </p>
 
                 <div class="button-container">
-                    <button type="button" class="speaker-button button-blue button">
+                    <button type="button" class="white-button button-blue button">
                         I want be Speaker
                     </button>
                     <button type="button" class="buy-button button-red button">
@@ -54,6 +55,7 @@
         </div>
     </main> <!-- Fin del main -->
 
+    <!-- Init Speaker -->
     <section class="speakers">
         <div class="speakers-container">
             <h2>Meet the speakers </h2>
@@ -122,11 +124,88 @@
                         Harum aspernatur ipsa illo vero quibusdam. Laboriosam recusandae, laudantium cupiditate ex provident quaerat in, sequi tenetur nemo facere excepturi. Fugit sint odio culpa dolore doloribus cupiditate eveniet nobis recusandae autem.
                     </p>
                 </article>
-
-
             </div>
 
         </div>
-    </section>
+    </section><!-- End Speaker -->
+    
+    <!-- Init Place -->
+    <section class="place">
+        <figure class="place__img">
+            <img src="./assets/img/boterp.jpg" alt="Boteroś Park">
+        </figure>
+
+        <article class="place__info">
+            <h2>Medellín - April 29</h2>
+            <p>
+                Quibusdam iure nemo sapiente nulla accusamus autem sit, cupiditate modi et, quod eos totam! Sit laboriosam harum maxime culpa ex minus laborum blanditiis cum veritatis. Mollitia minus officiis earum adipisci!
+                Ullam consectetur quasi quis iure illum debitis soluta, maiores fuga architecto autem, error reiciendis repudiandae commodi veritatis ad. Quam, nihil ducimus! Ut itaque, odio natus vero dolor nam accusamus accusantium!
+            </p>
+
+            <button type="button" class="white-button button">
+                More Info
+            </button>
+        </article>
+    </section><!-- End place -->
+
+    <!-- Init inscriptions -->
+    <section class="incriptions">
+        <form action="#" class="inscription__form">
+            <fieldset class="form_container">
+                <legend>Open Inscriptions</legend>
+
+                <div class="label label__name">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="You Name">
+                </div>
+               
+                <div class="label label__lname">                
+                    <label for="lname">Last Name:</label>
+                    <input type="text" placeholder="You Last Name">
+                </div>
+
+                <div class="label label__mail">                
+                    <label for="mail">Last Name:</label>
+                    <input type="text" placeholder="name_mail@holberton.com">
+                </div>
+
+                <div class="label label__message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <input class="button-red button" type="submit" value="Send">
+
+            </fieldset>
+        </form>
+    </section><!-- End inscriptions -->
+
+    <!-- init Footer -->
+    <footer class="footer">
+        <div class="footer__social container">
+            <a href="https://www.instagram.com/holbertoncolombia/?hl=es" class="social__logo instagram" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+            </a>
+            <a href="https://twitter.com/HolbertonCOL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social__logo twitter" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </a>
+            <a href="https://es-la.facebook.com/HolbertonSchoolColombia/" class="social__logo facebook" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+        </div>
+        <p>All rights reserved Jose Luis Zuñiga®.</p>
+    </footer>
+    <!-- End Footer -->
 </body>
 </html>
