@@ -150,7 +150,7 @@ main{
 @media(min-width: 550px){
     .main-container .main-info-conf{
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: justify;
         color: var(--white);
     }
@@ -272,7 +272,6 @@ main{
     border-radius: 10px;
 }
 @media(min-width: 550px){
-
     .speaker-card{
         width: 100%;
         column-gap: 15px
@@ -322,7 +321,7 @@ main{
     text-align: justify;
     font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 1.5;
 }
 
 /*******Inicio Place***********/
