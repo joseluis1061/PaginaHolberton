@@ -24,13 +24,16 @@ h1{
     line-height: 5.7rem;
     text-align: center;
     color: var(--white);
-    background-color: var(--dark-gray);
 }
 h2{
     font-size: 3.8rem;
     font-weight: 700;
     line-height: 5.7rem;
     text-align: center;
+}
+.dev__title{
+    background-color: var(--dark-gray);
+    color: var(--white);
 }
 h3{
     font-size: 1.8rem;
@@ -103,10 +106,19 @@ img{
         text-decoration: none;
         color: var(--white);
     }
+    .header-nav-container a:hover{
+        border: 1px solid var(--white);
+        border-radius: 5px;
+    }
     .header-nav-container a.buy{
         border: 1px solid var(--red);
         border-radius: 5px;
     }
+    .header-nav-container a.buy:hover{
+        border: 2px solid var(--red);
+        font-weight: bold;
+    }
+
 }
 
 /* main */
@@ -129,17 +141,18 @@ main{
     top: 15%;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+
     margin: auto 0;
 }
 @media(min-width: 550px){
     .main-container {
+        width: 100%;
         position: static;
         gap: 25px;
-        max-width: 600px;
+        max-width: 700px;
         margin: 0 auto;
     }
 }
@@ -149,10 +162,12 @@ main{
 
 @media(min-width: 550px){
     .main-container .main-info-conf{
+        display: inline-block;
+        width: 100%;
         display: block;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: justify;
-        color: var(--white);
+        color: var(--white);        
     }
 }
 .button-container{
@@ -409,21 +424,25 @@ main{
 .footer{
     width: 100%;
     background-color: var(--blue);
-    padding: 30px auto;
-    display: flex;
+    padding: 30px auto; 
+    /* display: flex;
     flex-direction: column;    
-    align-content: center;
+    align-content: center; */
 }
+
 .footer__social{
-    margin: 15px auto;
+    /* margin: 15px auto; */
     align-self: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: center;    
+    column-gap: 70px;
+    padding: 25px 0;
 }
 .footer p{
     color: var(--white);
     font-size: 1.5rem;
     text-align: center;
-    margin: 15px auto;
+    padding: 20px auto; 
+    padding-bottom: 30px;
 }
