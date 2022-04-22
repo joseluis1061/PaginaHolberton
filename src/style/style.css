@@ -58,11 +58,12 @@ img{
     width: 100%;
     height: 100%;
     max-width: 1000px;
-
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 }
 .header-logo-container{
     width: 70px;
@@ -76,6 +77,9 @@ img{
         display: none;
     }
 }
+
+
+
 .header-logo-container .logo-img{
     width: 100%;
     height: 100%;
@@ -90,10 +94,43 @@ img{
     height: 100%;
 }
 .header-nav-container{
+    position: absolute;
+    top: 45px;
+    left: -350px;
+    width: 50%;
+    color: var(--white);
+    background-color: var(--blue);
+}
+.nav_activate{
     display: none;
+}
+.nav_activate:checked  ~ .header-nav-container{
+    left: 0px;
+}
+.header-nav-container a{
+    display: block;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+.header-nav-container a:hover{
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+.header-nav-container a.buy{
+    border: 1px solid var(--red);
+    border-radius: 5px;
+}
+.header-nav-container a.buy:hover{
+    border: 2px solid var(--red);
+    font-weight: bold;
 }
 @media(min-width: 650px){
     .header-nav-container{
+        position: static;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 5px;
@@ -106,19 +143,6 @@ img{
         text-decoration: none;
         color: var(--white);
     }
-    .header-nav-container a:hover{
-        border: 1px solid var(--white);
-        border-radius: 5px;
-    }
-    .header-nav-container a.buy{
-        border: 1px solid var(--red);
-        border-radius: 5px;
-    }
-    .header-nav-container a.buy:hover{
-        border: 2px solid var(--red);
-        font-weight: bold;
-    }
-
 }
 
 /* main */
@@ -255,13 +279,6 @@ main{
 }
 /* Start Cards Speakers Container */
 .speaker-cards-container{
-    /* width: 100%;
-    min-width: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;         */
     width: 100%;
 
 }
