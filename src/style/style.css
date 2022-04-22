@@ -41,7 +41,7 @@ h3{
     line-height: 2.6rem;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .container{
     max-width: 900px;
@@ -442,9 +442,6 @@ main{
     width: 100%;
     background-color: var(--blue);
     padding: 30px auto; 
-    /* display: flex;
-    flex-direction: column;    
-    align-content: center; */
 }
 
 .footer__social{
@@ -462,4 +459,23 @@ main{
     text-align: center;
     padding: 20px auto; 
     padding-bottom: 30px;
+}
+
+/***INIT PAGE SPEACKERS*****/
+@media(min-width: 768px){
+    .speacker-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+}
+
+
+.speacker-info p{
+    display: inline-block;
+    width: 100%;
+    display: block;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 20px;
 }
